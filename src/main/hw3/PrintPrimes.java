@@ -1,5 +1,6 @@
 package main.hw3;
 
+
 // Introduction to Software Testing
 // Authors: Paul Ammann & Jeff Offutt
 // Chapter 7; page ??
@@ -7,12 +8,16 @@ package main.hw3;
 // See PrintPrimes.num for a numbered version.
 // No JUnit tests at this time
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+
 /** *****************************************************
  * Finds and prints n prime integers
  * Jeff Offutt, Spring 2003
  ********************************************************* */
 public class PrintPrimes {
 
+    WebDriverException  webDriverException = new WebDriverException();
     /**
      * 判断是否可以整除
      * @param i
